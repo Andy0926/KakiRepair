@@ -6,9 +6,15 @@ class InputLogin extends StatelessWidget {
     return Container(
       child: TextFormField(
         textAlign: TextAlign.center,
+        cursorColor: Colors.white,
         decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+            borderRadius: new BorderRadius.circular(25.0),
+          ),
           labelText: 'Login',
-          fillColor: Colors.transparent,
+          labelStyle: TextStyle(fontSize: 20, color: Colors.white),
+          fillColor: Colors.white,
         ),
       ),
     );
@@ -23,7 +29,12 @@ class InputPassword extends StatelessWidget {
         textAlign: TextAlign.center,
         decoration: InputDecoration(
           labelText: 'Password',
-          fillColor: Colors.transparent,
+          labelStyle: TextStyle(fontSize: 20, color: Colors.white),
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+            borderRadius: new BorderRadius.circular(25.0),
+          ),
+          //fillColor: Colors.transparent,
         ),
         obscureText: true,
       ),

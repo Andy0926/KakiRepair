@@ -40,7 +40,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Spacer(),
                                 Text(
                                   'Welcome back!',
-                                  style: Theme.of(context).textTheme.title,
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 25),
                                 ),
                                 Spacer(),
                                 InputLogin(),
@@ -56,7 +57,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                 SizedBox(
                                   height: 20.0,
                                 ),
-                                Text('Forgot password?'),
+                                Text(
+                                  'Forgot password?',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                  ),
+                                ),
                                 Spacer(),
                               ],
                             ),
