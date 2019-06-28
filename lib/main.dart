@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './ui/login.dart';
+import './ui/mainScreen.dart';
 
 void main() {
-  runApp(new MaterialApp(title:"Login", home:  new Login(),));
+  runApp(new MaterialApp(title:"Login", home:  new MainScreen(),));
 }
