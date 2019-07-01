@@ -51,7 +51,7 @@ class MainScreen extends StatelessWidget {
                                 SizedBox(
                                   height: 40,
                                 ),
-                                ButtonRegister(),
+                                ButtonRegisterScreen(),
                               ]),
                         ),
                       ),

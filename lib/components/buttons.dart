@@ -28,7 +28,7 @@ class ButtonLoginScreen extends StatelessWidget {
   }
 }
 
-class ButtonRegister extends StatelessWidget {
+class ButtonRegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -49,25 +49,25 @@ class ButtonRegister extends StatelessWidget {
           side: BorderSide(color: Colors.black),
         ),
         onPressed: () => {
-              Navigator.pushReplacementNamed(context, '/'),
+              Navigator.pushReplacementNamed(context, '/register'),
+              debugPrint("aaa"),
             },
       ),
     );
   }
 }
+
 class ButtonLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 50.0,
       width: 300.0,
-      
       child: RaisedButton(
         textColor: Colors.black,
         color: Colors.yellow[100],
         child: Text(
           'LOGIN',
-         
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,

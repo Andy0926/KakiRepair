@@ -4,17 +4,23 @@ class InputLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: TextFormField(
-        textAlign: TextAlign.center,
-        cursorColor: Colors.white,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.red),
-            borderRadius: new BorderRadius.circular(25.0),
+      child: new Theme(
+        data: new ThemeData(
+          primaryColor: Colors.redAccent,
+          primaryColorDark: Colors.red,
+        ),
+        child: TextFormField(
+          textAlign: TextAlign.center,
+          cursorColor: Colors.white,
+          style: TextStyle(color: Colors.white),
+          decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderRadius: new BorderRadius.circular(25.0),
+            ),
+            labelText: 'Login',
+            labelStyle: TextStyle(fontSize: 20, color: Colors.white),
+            fillColor: Colors.white,
           ),
-          labelText: 'Login',
-          labelStyle: TextStyle(fontSize: 20, color: Colors.white),
-          fillColor: Colors.white,
         ),
       ),
     );
@@ -25,18 +31,24 @@ class InputPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: TextFormField(
-        textAlign: TextAlign.center,
-        decoration: InputDecoration(
-          labelText: 'Password',
-          labelStyle: TextStyle(fontSize: 20, color: Colors.white),
-          border: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.red),
-            borderRadius: new BorderRadius.circular(25.0),
-          ),
-          //fillColor: Colors.transparent,
+      child: new Theme(
+        data: new ThemeData(
+          primaryColor: Colors.redAccent,
+          primaryColorDark: Colors.red,
         ),
-        obscureText: true,
+        child: TextFormField(
+          textAlign: TextAlign.center,
+          cursorColor: Colors.white,
+          style: TextStyle(color: Colors.white),
+          decoration: InputDecoration(
+            labelText: 'Password',
+            labelStyle: TextStyle(fontSize: 20, color: Colors.white),
+            border: OutlineInputBorder(
+              borderRadius: new BorderRadius.circular(25.0),
+            ),
+          ),
+          obscureText: true,
+        ),
       ),
     );
   }
