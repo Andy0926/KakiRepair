@@ -26,3 +26,15 @@ class BackgroundImageBlur extends StatelessWidget {
     );
   }
 }
+
+class MainBackground extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('assets/mainBackground.jpg'), fit: BoxFit.cover),
+      ),
+    );
+  }
+}

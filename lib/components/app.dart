@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kaki_repair/ui/login.dart';
+import 'package:kaki_repair/ui/mainFrame.dart';
 import 'package:kaki_repair/ui/mainScreen.dart';
 import 'package:kaki_repair/ui/register.dart';
 
@@ -18,6 +19,7 @@ class _RunAppState extends State<RunApp> {
       routes: {
         '/login': (BuildContext context) => LoginScreen(),
         '/register':(BuildContext context)=>RegisterScreen(),
+        '/mainFrame':(BuildContext context)=>MainFrame(),
       },
     );
   }

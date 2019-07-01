@@ -77,7 +77,34 @@ class ButtonLogin extends StatelessWidget {
           borderRadius: BorderRadius.circular(30.0),
         ),
         onPressed: () => {
-              //Navigator.pushReplacementNamed(context, '/swipe'),
+              Navigator.pushReplacementNamed(context, '/mainFrame'),
+            },
+      ),
+    );
+  }
+}
+
+class ButtonRegister extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50.0,
+      width: 300.0,
+      child: RaisedButton(
+        textColor: Colors.black,
+        color: Colors.yellow[100],
+        child: Text(
+          'Create Account',
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        onPressed: () => {
+              Navigator.pushReplacementNamed(context, '/mainFrame'),
             },
       ),
     );
